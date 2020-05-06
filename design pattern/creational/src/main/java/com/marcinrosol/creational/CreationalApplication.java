@@ -16,6 +16,8 @@ public class CreationalApplication {
 				.setKmPassed(300000L)
 				.build();
 		System.out.println(c);
+
+
 	}
 
 }
