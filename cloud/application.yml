@@ -1,0 +1,8 @@
+my:
+  greeting: hello world 2
+  list: One, Two, Three
+  
+db:
+  connection: connection-string
+  host: 127.0.0.1
+  port: 2455
