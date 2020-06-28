@@ -4,8 +4,10 @@ import com.marcinrosol.creational.builder.Models.Car;
 import com.marcinrosol.creational.builder.Models.builders.CarBuilder;
 import com.marcinrosol.creational.decorator.CarA;
 import com.marcinrosol.creational.decorator.accesories.Cabrio;
+import com.marcinrosol.creational.decorator.accesories.CarVersionDecorator;
 import com.marcinrosol.creational.decorator.accesories.Cupe;
 import com.marcinrosol.creational.decorator.accesories.GranCoupe;
+import com.marcinrosol.creational.decorator.carModels.CarDto;
 import com.marcinrosol.creational.decorator.carModels.bmw4;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,7 +32,8 @@ public class CarController {
 
     @GetMapping("/all")
     public void getAll(){
-        List<CarA> list = new ArrayList<>();
+        List<CarVersionDecorator> list = new ArrayList<>();
+
 
         list.add(new Cupe(new bmw4()));
         list.add(new GranCoupe(new bmw4()));
