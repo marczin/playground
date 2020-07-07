@@ -1,6 +1,6 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:tns="http://spring.io/guides/gs-producing-web-service"
-           targetNamespace="http://spring.io/guides/gs-producing-web-service"
+           xmlns:tns="http://marcinrosol.pl/soap"
+           targetNamespace="http://marcinrosol.pl/soap"
            elementFormDefault="qualified">
 
     <xs:element name="getCountryRequest">
