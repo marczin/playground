@@ -1,5 +1,6 @@
 package pl.marcinrosol.cloudbookstore.rest.services.impl;
 
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
@@ -16,14 +17,10 @@ import java.util.Optional;
 
 @Service
 @Slf4j
+@AllArgsConstructor
 public class BookServiceImpl implements BookService {
 
     private final BookRepository bookRepository;
-
-    @Autowired
-    public BookServiceImpl(BookRepository bookRepository) {
-        this.bookRepository = bookRepository;
-    }
 
     @Override
     public Book addBook(Book book){

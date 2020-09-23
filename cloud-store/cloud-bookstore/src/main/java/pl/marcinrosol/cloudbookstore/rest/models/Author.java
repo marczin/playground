@@ -18,10 +18,20 @@ public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long authorId;
+
     private String name;
     private String surname;
 
     @OneToMany(mappedBy = "author")
     private List<Book> books;
 
+    @Override
+    public String toString() {
+        return "Author{" +
+                "authorId=" + authorId +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", books=" + books +
+                '}';
+    }
 }
